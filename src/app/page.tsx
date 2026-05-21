@@ -1,10 +1,14 @@
-import { LoginForm } from "@/components/login-form"
+
 import LoginPage from "./login/page"
 import HeroSectionPage from "./hero-section-41/page"
+import ProductListingPage from "./product-listing-01/page"
 
 export default function HomePage() {
   return (
-  <><LoginPage>
-    </LoginPage><HeroSectionPage /></>
+  <><LoginPage/>
+
+    <HeroSectionPage />
+    <ProductListingPage/>
+    </>
   )
 }
