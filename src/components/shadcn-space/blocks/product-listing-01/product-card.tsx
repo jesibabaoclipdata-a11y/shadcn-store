@@ -7,35 +7,35 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
-export interface ProductCardProps {
-  image: string;
-  category: string;
-  name: string;
-  rating: number;
-  reviews: number;
+interface ProductProps {
+  id: number;
+  title: string;
   price: number;
-  originalPrice?: number;
+  images: string[];
   badge?: {
     text: string;
   };
+ category: {
+  name:string;
+ }
   className?: string;
   onAddToCart?: () => void;
   onWishlist?: () => void;
 }
 
+
+
 export function ProductCard({
-  image,
-  category,
-  name,
-  rating,
-  reviews,
+  id,
+  title,
   price,
-  originalPrice,
+  images,
   badge,
+  category,
   className,
   onAddToCart,
   onWishlist,
-}: ProductCardProps) {
+}: ProductProps) {
   const [isWishlisted, setIsWishlisted] = useState(false);
 
   const getBadgeStyles = (text: string) => {
@@ -85,18 +85,18 @@ export function ProductCard({
           <span className="sr-only">Add to wishlist</span>
         </Button>
         <img
-          src={image}
-          alt={name}
+          src={images[0]}
+          alt={title}
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
         />
       </div>
       <CardContent className="flex flex-col gap-3 p-5">
         <div className="flex flex-col gap-2">
           <span className="text-sm text-muted-foreground capitalize">
-            {category}
+            {category.name}
           </span>
           <p className="line-clamp-1 text-lg font-medium text-foreground">
-            {name}
+            {title}
           </p>
           <div className="flex items-center gap-2">
             <div className="flex items-center">
@@ -105,23 +105,23 @@ export function ProductCard({
                   key={i}
                   className={cn(
                     "h-3.5 w-3.5",
-                    i < Math.floor(rating)
+                    i < Math.floor(10)
                       ? "fill-orange-400 text-orange-400"
                       : "fill-muted text-orange-400",
                   )}
                 />
               ))}
             </div>
-            <small className="text-sm text-foreground">{rating}</small>
-            <small className="text-sm text-foreground">({reviews})</small>
+            <small className="text-sm text-foreground">{10}</small>
+            <small className="text-sm text-foreground">({10})</small>
           </div>
           <div className="flex items-center gap-2">
             <small className="text-lg font-medium text-foreground">
               ${price}
             </small>
-            {originalPrice && (
+            {price && (
               <small className="text-lg font-medium text-muted-foreground line-through">
-                ${originalPrice}
+                ${price}
               </small>
             )}
           </div>

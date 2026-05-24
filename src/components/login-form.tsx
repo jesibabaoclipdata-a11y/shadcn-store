@@ -9,6 +9,7 @@ import {
   FieldSeparator,
 } from "@/components/ui/field"
 import { Input } from "@/components/ui/input"
+import { BorderBeam } from "./ui/border-beam"
 
 export function LoginForm({
   className,
@@ -93,8 +94,13 @@ export function LoginForm({
               alt="Image"
               className="absolute inset-0 h-full w-full object-cover dark:brightness-[0.2] dark:grayscale"
             />
+            <BorderBeam duration={8} size={300} />
+
           </div>
+
+
         </CardContent>
+
       </Card>
       <FieldDescription className="px-6 text-center">
         By clicking continue, you agree to our <a href="#">Terms of Service</a>{" "}
