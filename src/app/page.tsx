@@ -4,19 +4,11 @@ import HeroSectionPage from "./hero-section-41/page"
 import ProductListingPage from "./product-listing-01/page"
 import ProductsPage from "@/components/Platzi"
 import { ProgressiveBlur } from "@/components/ui/progressive-blur"
+import { Link } from "lucide-react"
+
 
 export default function HomePage() {
   return (
-
-
-
-  <>
-
-  <LoginPage/>
-
-    <HeroSectionPage />
-    <ProductListingPage/>
-
-    </>
+    <LoginPage />
   )
 }

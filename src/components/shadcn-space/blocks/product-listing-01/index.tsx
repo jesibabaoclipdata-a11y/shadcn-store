@@ -58,7 +58,7 @@ export default function ProductListing({
             <h2 className="text-2xl font-semibold text-foreground">
               Featured products
             </h2>
-          <div className="flex gap-5 justify-between bg-black w-full">
+          <div className="flex gap-5 justify-betwee w-full">
               <p className="text-base text-muted-foreground">
               Handpicked by our team
             </p>
