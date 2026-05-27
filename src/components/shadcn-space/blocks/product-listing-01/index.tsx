@@ -97,7 +97,7 @@ export default function ProductListing() {
   }, []);
 
   if (loading) {
-    return <div>Loading products...</div>;
+    return <div className= "animate-pulse">Loading products...</div>;
   }
 
   return (
@@ -112,7 +112,7 @@ export default function ProductListing() {
         </div>
 
 
-        <div className="overflow-x-scroll">
+        <div className="">
           <div className="grid grid-cols-2 md:grid-cols-4  ">
             {products.map((product) => (
               <div

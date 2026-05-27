@@ -36,7 +36,7 @@ const handleLogin = (e: React.FormEvent) => {
               <div className="flex flex-col items-center gap-2 text-center">
                 <h1 className="text-2xl font-bold">Welcome back</h1>
                 <p className="text-balance text-muted-foreground">
-                  Login to your Acme Inc account
+                  Login to proceed to your account
                 </p>
               </div>
               <Field>
@@ -103,7 +103,7 @@ const handleLogin = (e: React.FormEvent) => {
           </form>
           <div className="relative hidden bg-muted md:block">
             <img
-              src="https://images.unsplash.com/photo-1506744038136-46273834b3fb"
+              src="https://scontent.fceb1-2.fna.fbcdn.net/v/t39.30808-6/565788201_1321196763351956_7880785692247587300_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=ym8YECXbf6MQ7kNvwFZIY15&_nc_oc=Adr_91pZn3ge6d5SwLMIO0Dl1cV4_icJnwckMak1AlkPQL9Udy-cLOUcfP2NALuWJ8Q&_nc_zt=23&_nc_ht=scontent.fceb1-2.fna&_nc_gid=FzMlKH4yQC6M4lm2D8upZg&_nc_ss=7b289&oh=00_Af6lT5GZUR0KErS4axJInGRmfyfZN7RUiWsQZGvDZrMB0w&oe=6A1C4D55"
               alt="Image"
               className="absolute inset-0 h-full w-full object-cover dark:brightness-[0.2] dark:grayscale"
             />
