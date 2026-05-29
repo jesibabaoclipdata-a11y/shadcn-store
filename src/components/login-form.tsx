@@ -103,11 +103,11 @@ const handleLogin = (e: React.FormEvent) => {
           </form>
           <div className="relative hidden bg-muted md:block">
             <img
-              src="https://scontent.fceb1-2.fna.fbcdn.net/v/t39.30808-6/565788201_1321196763351956_7880785692247587300_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=ym8YECXbf6MQ7kNvwFZIY15&_nc_oc=Adr_91pZn3ge6d5SwLMIO0Dl1cV4_icJnwckMak1AlkPQL9Udy-cLOUcfP2NALuWJ8Q&_nc_zt=23&_nc_ht=scontent.fceb1-2.fna&_nc_gid=FzMlKH4yQC6M4lm2D8upZg&_nc_ss=7b289&oh=00_Af6lT5GZUR0KErS4axJInGRmfyfZN7RUiWsQZGvDZrMB0w&oe=6A1C4D55"
+              src="https://scontent.fceb1-3.fna.fbcdn.net/v/t39.30808-6/653707173_1451589896979308_7791643272176537517_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_ohc=VXnAIPV9bJYQ7kNvwF25ql9&_nc_oc=AdrCNskWQj6KUwQUb5-K16nZspRq_W2dLtXhTkwaiOXBhXq7Qyhol5_Pk40hJmzbUJI&_nc_zt=23&_nc_ht=scontent.fceb1-3.fna&_nc_gid=s37b816h24xmwBowYx6NnQ&_nc_ss=7b289&oh=00_Af614wsEWAl7u6aLPGOkqw6gmGeG8O2PvRGtC9G4d-mQDg&oe=6A1F329A"
               alt="Image"
               className="absolute inset-0 h-full w-full object-cover dark:brightness-[0.2] dark:grayscale"
             />
-            <BorderBeam duration={8} size={300} />
+            <BorderBeam duration={10} size={500} />
 
           </div>
 
