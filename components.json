@@ -28,6 +28,7 @@
     "@ss-themes": "https://shadcnstudio.com/r/themes/{name}.json",
     "@shadcn-space": "https://shadcnspace.com/r/{name}.json",
     "@magicui": "https://magicui.design/r/{name}",
-    "@ui-layouts": "https://ui-layouts.com/r/{name}.json"
+    "@ui-layouts": "https://ui-layouts.com/r/{name}.json",
+    "@shadcnblocks": "https://shadcnblocks.com/r/{name}.json"
   }
 }
