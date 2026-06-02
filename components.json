@@ -29,6 +29,10 @@
     "@shadcn-space": "https://shadcnspace.com/r/{name}.json",
     "@magicui": "https://magicui.design/r/{name}",
     "@ui-layouts": "https://ui-layouts.com/r/{name}.json",
+<<<<<<< HEAD
     "@shadcnblocks": "https://shadcnblocks.com/r/{name}.json"
+=======
+    "@aceternity": "https://ui.aceternity.com/registry/{name}.json"
+>>>>>>> 240f62500c0e943f27765a948907a8ead91fdd7d
   }
 }

@@ -1,3 +1,5 @@
+/* eslint-disable react-hooks/refs */
+/* eslint-disable react-hooks/set-state-in-effect */
 'use client'
 
 import { useEffect, useState, useRef, useCallback } from 'react'
@@ -9,6 +11,7 @@ import { Button } from '@/components/ui/button'
 import { type CarouselApi, Carousel, CarouselContent, CarouselItem } from '@/components/ui/carousel'
 import { cn } from '@/lib/utils'
 import { ArrowRightIcon } from "lucide-react"
+import { BackgroundRippleEffect } from '@/components/ui/background-ripple-effect'
 
 export type MenuData = {
   id: number
@@ -83,8 +86,10 @@ const HeroSection = ({ menudata }: { menudata: MenuData[] }) => {
   const plugin = useRef(Autoplay({ delay: 3000, stopOnInteraction: false }))
 
   return (
-    <section className='flex-1 py-12 sm:py-16 lg:py-24 bg-red'>
-      <div className='mx-auto flex h-full max-w-7xl flex-col gap-16 px-4 sm:px-6 lg:px-8'>
+    <section className='relative flex-1 overflow-hidden py-12 sm:py-16 lg:py-24'  >
+      <BackgroundRippleEffect cellSize={50}/>
+
+      <div className='relative z-10 mx-auto flex h-full max-w-7xl flex-col gap-16 px-4 sm:px-6 lg:px-8'>
         {/* Hero Header */}
         <div className='grid grid-cols-1 gap-6 gap-y-12 md:gap-y-16 lg:grid-cols-5'>
           <div className='flex w-full flex-col justify-center gap-5 max-lg:items-center lg:col-span-3 lg:h-95.5'>
@@ -199,7 +204,10 @@ const HeroSection = ({ menudata }: { menudata: MenuData[] }) => {
           </Carousel>
         </div>
       </div>
+
+
     </section>
+
   )
 }
 

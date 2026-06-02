@@ -21,7 +21,7 @@ export function LoginForm({
   ...props
 }: React.ComponentProps<"div">) {
    const router = useRouter()
-   
+
 const handleLogin = (e: React.FormEvent) => {
   e.preventDefault()
 
@@ -61,8 +61,8 @@ const handleLogin = (e: React.FormEvent) => {
                 <Input id="password" type="password" required />
               </Field>
               <Field>
-                <Button type="submit">Login</Button>
-                
+                <Button type="submit">Login Nigga</Button>
+
               </Field>
               <FieldSeparator className="*:data-[slot=field-separator-content]:bg-card">
                 Or continue with
@@ -75,7 +75,7 @@ const handleLogin = (e: React.FormEvent) => {
                       fill="currentColor"
                     />
                   </svg>
-                  <span className="sr-only">Login with Apple</span>
+                  <span className="sr-only">Login with Apple Meow</span>
                 </Button>
                 <Button variant="outline" type="button">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
