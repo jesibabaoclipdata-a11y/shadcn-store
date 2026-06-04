@@ -11,10 +11,6 @@ export default function MainPage() {
         <HeroSectionPage/>
          < Feature72 />
         <ProductListingPage/>
-      
-
-
-
         </>
     )
 
