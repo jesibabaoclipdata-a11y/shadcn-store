@@ -1,7 +1,8 @@
 import HeroSectionPage from "@/app/hero-section-41/page";
 import ProductListingPage from "@/app/product-listing-01/page";
+import { Feature108 } from "@/components/blocks/shadcnblocks-com-feature108";
 import { FeatureBento } from "@/components/feature-bento";
-import { Feature72 } from "@/components/feature72";
+
 import MultiSelector from "@/components/multi";
 import { BackgroundRippleEffect } from "@/components/ui/background-ripple-effect";
 export default function MainPage() {
@@ -10,8 +11,9 @@ export default function MainPage() {
         <>
 
         <HeroSectionPage/>
-         < Feature72 />
-         <MultiSelector/>
+        <Feature108/>
+
+
         <ProductListingPage/>
         </>
     )

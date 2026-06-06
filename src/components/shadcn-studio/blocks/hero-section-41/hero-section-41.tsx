@@ -12,6 +12,7 @@ import { type CarouselApi, Carousel, CarouselContent, CarouselItem } from '@/com
 import { cn } from '@/lib/utils'
 import { ArrowRightIcon } from "lucide-react"
 import { BackgroundRippleEffect } from '@/components/ui/background-ripple-effect'
+import { Boxes } from '@/components/ui/background-boxes'
 
 export type MenuData = {
   id: number
@@ -87,9 +88,11 @@ const HeroSection = ({ menudata }: { menudata: MenuData[] }) => {
 
   return (
     <section className='relative flex-1 overflow-hidden py-12 sm:py-16 lg:py-24'  >
-      <BackgroundRippleEffect cellSize={50}/>
+
+
 
       <div className='relative z-10 mx-auto flex h-full max-w-7xl flex-col gap-16 px-4 sm:px-6 lg:px-8'>
+          <Boxes/>
         {/* Hero Header */}
         <div className='grid grid-cols-1 gap-6 gap-y-12 md:gap-y-16 lg:grid-cols-5'>
           <div className='flex w-full flex-col justify-center gap-5 max-lg:items-center lg:col-span-3 lg:h-95.5'>
