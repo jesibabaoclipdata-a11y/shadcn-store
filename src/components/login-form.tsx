@@ -61,7 +61,7 @@ const handleLogin = (e: React.FormEvent) => {
                 <Input id="password" type="password" required />
               </Field>
               <Field>
-                <Button type="submit">Login Nigga</Button>
+                <Button type="submit">Login</Button>
 
               </Field>
               <FieldSeparator className="*:data-[slot=field-separator-content]:bg-card">
